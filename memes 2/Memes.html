@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meme World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Meme World</h1>
+            <nav>
+                <a href="#funny">Funny</a>
+                <a href="#trending">Trending</a>
+                <a href="#random">Random</a>
+                <a href="#create">Create Meme</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Meme Categories -->
+        <section id="funny">
+            <h2>Funny Memes</h2>
+            <div class="meme-gallery">
+                <!-- Static memes for now -->
+                <img src="assets/funny1.jpg" alt="Funny Meme 1">
+                <img src="assets/funny2.jpg" alt="Funny Meme 2">
+                <img src="assets/funny3.jpg" alt="Funny Meme 3">
+            </div>
+        </section>
+
+        <section id="trending">
+            <h2>Trending Memes</h2>
+            <div class="meme-gallery">
+                <img src="assets/trending1.jpg" alt="Trending Meme 1">
+                <img src="assets/trending2.jpg" alt="Trending Meme 2">
+                <img src="assets/trending3.jpg" alt="Trending Meme 3">
+            </div>
+        </section>
+
+        <section id="random">
+            <h2>Random Memes</h2>
+            <div class="meme-gallery">
+                <img src="assets/random1.jpg" alt="Random Meme 1">
+                <img src="assets/random2.jpg" alt="Random Meme 2">
+                <img src="assets/random3.jpg" alt="Random Meme 3">
+            </div>
+        </section>
+
+        <!-- Create Meme Section -->
+        <section id="create">
+            <h2>Create Your Meme</h2>
+            <form id="meme-form">
+                <label for="top-text">Top Text:</label>
+                <input type="text" id="top-text" placeholder="Enter top text" required>
+
+                <label for="bottom-text">Bottom Text:</label>
+                <input type="text" id="bottom-text" placeholder="Enter bottom text" required>
+
+                <label for="meme-image">Meme Image URL:</label>
+                <input type="url" id="meme-image" placeholder="Enter image URL" required>
+
+                <button type="submit">Create Meme</button>
+            </form>
+
+            <div id="meme-output">
+                <!-- Meme preview will appear here -->
+            </div>
+        </section>
+
+        <!-- Upload Meme Section -->
+        <section id="upload">
+            <h2>Upload Your Own Meme</h2>
+            <form id="upload-form">
+                <label for="upload-image">Upload Meme Image:</label>
+                <input type="file" id="upload-image" accept="image/*" required>
+                <button type="submit">Upload Meme</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Meme World. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
